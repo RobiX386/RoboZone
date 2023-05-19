@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Headerr from '@/components/header.js'
+import Headerr from '@/components/navBar.js'
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-export default function Headerr(){
+export default function navBar(){
     return (
         <div className="w-full flex justify-between items-center px-[100px] darkLightBackground">
             <h1>RoboZone</h1>
