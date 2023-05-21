@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 export default function NavBar(){
     return (
         <div className="w-full flex justify-between items-center px-[300px] py-[20px] darkLightBackground">
