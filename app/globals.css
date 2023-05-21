@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,11 +7,23 @@
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
 .fundal {
   background-color: #242424;
 }
 
-/* CSS pagina home */
 .home_title {
   color: #cccccc;
   text-align: center;
@@ -38,10 +49,6 @@
   margin-left: 20px;
   padding: 5px 10px;
 }
-
-
-
-/* CSS pagina login */
 
 .login_buton {
   background-color: #57c5b6;
@@ -84,8 +91,6 @@
   font-size: 50px;
 }
 
-/* CSS RARES */
-
 .darkBackground {
   background: #242424;
 }
@@ -101,10 +106,33 @@
   -webkit-text-fill-color: transparent;
 }
 
-/*
-'primary': '#57c5b6',
-'secondary': '#159895',
-'accent': '#1a5f7a',
-'dark': '#242424',
-'light': '#cccccc',
-*/
+body {
+  background: #242424;
+}
+
+.textColorDark{
+  color: #cccccc;
+}
+
+.textColorLight{
+  color: #242424;
+}
+
+.darkBackground {
+  background: #242424;
+}
+
+.lightBackground {
+  background: #cccccc;
+}
+
+.darkLightBackground {
+  background: #2c2c2c;
+}
+
+.logoGradient {
+  background: #57C5B6;
+  background: linear-gradient(to right, #57C5B6 0%, #1A5F7A 76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
