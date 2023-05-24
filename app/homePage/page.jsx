@@ -1,23 +1,18 @@
 import fs from "fs"
 import Link from "next/link"
 import Thumbnail from "../../components/lectieThumbnail"
-
-const getPostMetadata = () => {
-    const folder = "./posts/"
-    const files = fs.readdirSync(folder)
-    const markdownPosts = files.filter((file) => file.endsWith(".md"))
-    const slugs = markdownPosts.map((file) => file.replace(".md", ""))
-    return slugs
-}
+import matter from "gray-matter"
+import { PostMetadata } from "../../components/postMetadata"
+import getPostMetadata from "../../components/getPostMetadata"
 
 export default function HomePage(){
     const postMetadata = getPostMetadata();
-    const postPreviews = postMetadata.map((slug) => (
+    const postPreviews = postMetadata.map((post) => (
         <div>
-            <Link href={`/posts/${slug}`}>
-                <h2>{slug}</h2>
+            <Link href={`/posts/${post.slug}`}>
+                <h2>{post.slug}</h2>
             </Link>
-            <Thumbnail titlu={slug} slug={slug} subtitle="First tech challenge este o competitie de robotica care..." imageSrc="/images/images.jpg"/>
+            <Thumbnail titlu={post.title} slug={post.slug} subtitle={post.subtitle} imageSrc="/images/images.jpg"/>
         </div>
     ))
     return(
