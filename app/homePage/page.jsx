@@ -9,10 +9,10 @@ export default function HomePage(){
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata.map((post) => (
         <div>
-            <Link href={`/posts/${post.slug}`}>
+            {/* <Link href={`/posts/${post.slug}`}>
                 <h2>{post.slug}</h2>
-            </Link>
-            <Thumbnail titlu={post.title} slug={post.slug} subtitle={post.subtitle} imageSrc="/images/images.jpg"/>
+            </Link> */}
+            <Thumbnail titlu={post.title} slug={post.slug} subtitle={post.subtitle} imageSrc={`/images/${post.thumbnailImage}`}/>
         </div>
     ))
     return(
