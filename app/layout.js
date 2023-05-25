@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Headerr from '@/components/navBar'
-import Footer from '@components/footer'
+import Footer from '../components/footer'
+import Header from '../components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* {inter.className} */}
       <body className="darkBackground">
-        <Headerr />
+        <Header />
         {children}
         <Footer classes="fixed bottom-0 w-full"/>
       </body>
