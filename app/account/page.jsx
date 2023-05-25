@@ -8,12 +8,7 @@ export default async function Page(){
     const user = await GetUser();
     console.log(user);
 
-    const [supabase] = useState(() => createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL,
-        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-    ));
-
-    if(0)
+    if(!user)
     {
     return (
         <main>
