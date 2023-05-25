@@ -4,7 +4,6 @@ export default function Footer(props){
     return(
         <div className={props.classes}>
             <div className="flex items-start justify-between darkLightBackground px-[500px] py-[15px]">
-            <Logo />
             <div className="flex items-start justify-around">
                     <div className="flex flex-col justify-start items-start px-[70px]">
                         <p className="textColorDark text-2xl font-semibold py-[20px]">About Us</p>
