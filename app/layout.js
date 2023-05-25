@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* {inter.className} */}
-      <body className="darkBackground">
+      <body className="darkBackground h-[100vh]">
         <Header />
         {children}
-        <Footer classes="fixed bottom-0 w-full"/>
+        <Footer />
       </body>
     </html>
   )

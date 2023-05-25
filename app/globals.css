@@ -110,6 +110,12 @@ body {
   background: #242424;
 }
 
+.horizontalLine {
+  background-image: linear-gradient(90deg, #57C5B6, #1A5F7A);
+  border: 0;
+  height: 5px;
+}
+
 .textColorDark{
   color: #cccccc;
 }
@@ -118,28 +124,14 @@ body {
   color: #242424;
 }
 
-.darkBackground {
-  background: #242424;
-}
-
-.lightBackground {
-  background: #cccccc;
-}
-
-.darkLightBackground {
-  background: #2c2c2c;
-}
-
-.logoGradient {
-  background: #57C5B6;
-  background: linear-gradient(to right, #57C5B6 0%, #1A5F7A 76%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .border_primary {
   border-color: #57C5B6;
 }
+
+.color_secondary {
+  color: #1A5F7A;
+}
+
 .color_primary {
   color:#57C5B6;
 }
@@ -147,9 +139,17 @@ body {
   color:#cccccc;
 }
 
+.backgroundPrimary{
+  background:#57C5B6;
+}
+
+.backgroundSecondary{
+  background: #1A5F7A;
+}
+/* 
 img{
   
-}
+} */
 
 .account_info {
   color: #242424;

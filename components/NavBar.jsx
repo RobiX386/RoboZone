@@ -3,12 +3,10 @@ import Link from "next/link";
 export default function Header(props){
     return (
         <div className={props.classes}>
-            <div className="w-full flex justify-between items-center px-[300px] py-[20px] darkLightBackground">
+            <div className="flex justify-around items-center py-[20px] darkLightBackground">
                 <Link className="text-3xl font-black logoGradient stroke-[10px]" href="http://localhost:3000/">RoboZone</Link>
                 <div className="flex justify-between items-center">
-                    <p className="text-2xl font-bold px-5 text-zinc-200">About</p>
-                    <hr className="rotate-90 w-[15px] border-x-[20px] border-zinc-200"></hr>
-                    <p className="text-2xl font-bold px-5 text-zinc-200" >Home</p>
+                    <Link href="http://localhost:3000/account" className="color_light text-2xl">Account</Link>
                 </div>
             </div>
         </div>
