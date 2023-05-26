@@ -6,17 +6,19 @@ export default function Thumbnail(props){
     const slug = props.slug
     return (
         <div className={props.classes}>
-            <div className="flex justify-start items-center w-[700px]">
-                <Image
-                    src={props.imageSrc}
-                    width={160}
-                    height={160}
-                    alt="picture" 
-                />
-                <div className="pl-[20px]">
+            <div className="flex justify-start items-center w-[60p%]">
+                <div className="hidden sm:block">
+                    <Image
+                        src={props.imageSrc}
+                        width={160}
+                        height={160}
+                        alt="picture"
+                    />
+                </div>
+                <div className="pl-[20px] hover:font-semibold hover:tracking-tight">
                     <Link href={`/posts/${slug}`}>
-                        <h1 className="text-2xl textColorDark font-bold pb-[10px]">{props.titlu}</h1>
-                        <h2 className="text-xl textColorDark font-medium">{props.subtitle.length > 60 ? `${props.subtitle.substring(0, 60)}...` : props.subtitle}</h2>
+                        <h1 className="text-2xl textColorDark font-bold mb-[10px]">{props.titlu}</h1>
+                        <p className="text-xl textColorDark ">{props.subtitle.length > 60 ? `${props.subtitle.substring(0, 60)}...` : props.subtitle}</p>
                     </Link>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 import fs from "fs"
 import Link from "next/link"
-import Thumbnail from "../../components/lectieThumbnail"
+import Thumbnail from "components/lectieThumbnail"
 import matter from "gray-matter"
 import { PostMetadata } from "../../components/postMetadata"
 import getPostMetadata from "../../components/getPostMetadata"
 
-export default function Posts(){
+export default function Lectii(){
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata.map((post) => (
         <div>

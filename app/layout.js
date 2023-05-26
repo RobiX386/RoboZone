@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* {inter.className} */}
-      <body className="darkBackground h-[100vh]">
-        <Header />
+      <body className="darkBackground">
+        <Header classes="w-full"/>
         {children}
         <Footer />
       </body>
