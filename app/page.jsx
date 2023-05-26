@@ -1,6 +1,7 @@
 import './globals.css'
 import Link from 'next/link'
 import Lectii from './homePage/page'
+// import { LectiiIntroducere } from './homePage/page'
 import { LectiiIntroducere } from './homePage/page'
 
 export default function Home() {
