@@ -13,6 +13,10 @@ const getPostMetadata = () => {
             date: matterResult.data.date,
             subtitle: matterResult.data.subtitle,
             thumbnailImage: matterResult.data.image,
+            introduction: matterResult.data.introduction,
+            category: matterResult.data.category,
+            chapter: matterResult.data.lessonChapter,
+            number: matterResult.data.lessonNumber,
             slug: fileName.replace(".md", ""),
         }
     })

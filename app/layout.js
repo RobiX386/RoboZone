@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* {inter.className} */}
       <body className="darkBackground">
-        <Header />
+        <Header classes="w-full"/>
         {children}
-        <Footer classes="fixed bottom-0 w-full"/>
+        <Footer />
       </body>
     </html>
   )

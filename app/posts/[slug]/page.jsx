@@ -18,13 +18,15 @@ export const generateStaticParams = async() => {
     }))
 }
 
-export default function Milsugio(props){
+export default function Page(props){
     const slug = props.params.slug
     const post = getPostContent(slug)
     return (
-        <div>
-            <h2>{post.data.title}</h2>
-            <Markdown>{post.content}</Markdown>
-        </div>
+        <main className="px-[500px]">
+            <div className="flex flex-col justify-center items-center">
+                <h1 className="text-5xl color_primary my-[40px]">{post.data.title}</h1>
+                <Markdown className="">{post.content}</Markdown>
+            </div>
+        </main>
     )
 }
