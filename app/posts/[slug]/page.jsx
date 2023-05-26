@@ -25,7 +25,9 @@ export default function Page(props){
         <main className="px-[500px]">
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-5xl color_primary my-[40px]">{post.data.title}</h1>
-                <Markdown className="">{post.content}</Markdown>
+                <article>
+                    <Markdown className="">{post.content}</Markdown>
+                </article>
             </div>
         </main>
     )
