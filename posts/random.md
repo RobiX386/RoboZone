@@ -4,6 +4,9 @@ subtitle: "Build a serverless 'hello-world' QR code app with Python and AWS."
 date: "2021-08-14"
 image: "daniMocanuPorsche.jpg"
 introduction: "true"
+category: "arduino"
+lessonChapter: "1"
+lessonNumber: "4"
 ---
 
 Ever since the pandemic started, I've noticed QR codes creeping into my daily life. Venue check-ins, digital menus at restaurants, and online payments.

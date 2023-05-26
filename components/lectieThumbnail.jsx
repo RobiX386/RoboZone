@@ -17,7 +17,7 @@ export default function Thumbnail(props){
                 </div>
                 <div className="pl-[20px] hover:font-semibold hover:tracking-tight">
                     <Link href={`/posts/${slug}`}>
-                        <h1 className="text-2xl textColorDark font-bold mb-[10px]">{props.titlu}</h1>
+                        <h1 className="text-2xl textColorDark font-bold mb-[10px]">{`${props.chapter}.${props.number}${" "}${props.titlu}`}</h1>
                         <p className="text-xl textColorDark ">{props.subtitle.length > 60 ? `${props.subtitle.substring(0, 60)}...` : props.subtitle}</p>
                     </Link>
                 </div>
