@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Lectii from './homePage/page'
 // import { LectiiIntroducere } from './homePage/page'
 import { LectiiIntroducere } from './homePage/page'
-import Line from '../components/linie'
+import Line from "components/line"
 
 export default function Home() {
   return (
@@ -14,10 +14,10 @@ export default function Home() {
             <h1 className="text-5xl mr-[10px] font-semibold">Invata </h1><h1 className='text-5xl ml-[10px] logoGradient font-semibold'>robotica</h1>
           </div>
           <div className='mt-[70px] flex flex-col sm:flex-row items-center  justify-center font-bold'>
-            <Link href="http://localhost:3000/register" className="px-[58px] py-[17px] my-[10px] sm:my-[0px] sm:mx-[30px] text-2xl backgroundPrimary textColorLight rounded-xl ">
+            <Link href="http://localhost:3000/login" className="px-[58px] py-[17px] my-[10px] sm:my-[0px] sm:mx-[30px] text-2xl backgroundPrimary textColorLight rounded-xl ">
               Login
             </Link>
-            <Link href="http://localhost:3000/login" className="px-[45px] py-[17px] my-[10px] sm:my-[0px] sm:mx-[30px] text-2xl backgroundSecondary textColorLight rounded-xl ">
+            <Link href="http://localhost:3000/register" className="px-[45px] py-[17px] my-[10px] sm:my-[0px] sm:mx-[30px] text-2xl backgroundSecondary textColorLight rounded-xl ">
               Sign Up
             </Link>
           </div>
@@ -25,11 +25,13 @@ export default function Home() {
         <div className='lessonsWrap mt-[80px] mb-[50px]'>
           <div>
             <h2 className='text-2xl'>Lectii de introducere</h2>
-            <hr className='w-full horizontalLine mt-[20px] mb-[15px] mr-[100px]'/>
+            <Line />
             {/* <Posts/> */}
             <LectiiIntroducere />
+            <Link href="http://localhost:3000/lessons">
+              <p className='text-right my-[20px] text-xl font-semibold text-primary'>Citeste Mai Mult</p>
+            </Link>
           </div>
-
         </div>
       </div>
     </main>

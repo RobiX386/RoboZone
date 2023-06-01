@@ -34,7 +34,7 @@ export function LectiiIntroducere(){
             {/* <Link href={`/posts/${post.slug}`}>
                 <h2>{post.slug}</h2>
             </Link> */}
-            <Thumbnail titlu={post.title} slug={post.slug} subtitle={post.subtitle} imageSrc={`/images/${post.thumbnailImage}`} classes="py-[20px]"/>
+            <Thumbnail titlu={post.title} slug={post.slug} subtitle={post.subtitle} chapter={post.chapter} number={post.number} imageSrc={`/images/${post.thumbnailImage}`} classes="py-[20px]"/>
         </div>
     ))
     return(
