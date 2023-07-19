@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Loading from './Loading';
 import NavBar from './NavBar';
 import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
-import Footer from './Footer';
+import Footer from '../components/Footer';
 
 function Layout({ children }) {
   const [loading, setloading] = useState(true)
