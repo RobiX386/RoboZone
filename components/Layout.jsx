@@ -3,8 +3,9 @@ import { Container } from 'reactstrap';
 import Head from 'next/head';
 import Loading from './Loading';
 import NavBar from './NavBar';
+import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
 
-export default function Layout({ children }) {
+function Layout({ children }) {
   const [loading, setloading] = useState(true)
   useEffect(() => {
     setTimeout(() => {
@@ -26,3 +27,7 @@ export default function Layout({ children }) {
   )
 
 }
+
+export default withPageAuthRequired(Layout, {
+  onRedirecting: () => '',
+});
