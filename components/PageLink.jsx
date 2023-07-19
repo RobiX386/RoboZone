@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import NavBarItem from './NavBarItem';
+import NavBarItem from '../components/NavBarItem';
 
 const PageLink = ({ children, href, className, icon, tabIndex, testId }) => {
   return (
