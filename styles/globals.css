@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bgpattern {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  radial-gradient(#efefef 1.9500000000000002px, transparent 1.9500000000000002px), radial-gradient(#efefef 1.9500000000000002px, #ffffff 1.9500000000000002px);
+    background-size: 78px 78px;
+    background-position: 0 0,39px 39px;
+}

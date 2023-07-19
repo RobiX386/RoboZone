@@ -1,28 +1,11 @@
-import Logo from "./logo"
+import React from 'react';
 
-export default function Footer(props){
-    return(
-        <div className={props.classes}>
-            <div className="flex justify-center items-center darkLightBackground">
-                <div className="flex flex-wrap items-start justify-center pt-[20px] pb-[40px]">
-                        <div className="flex flex-col justify-start items-start px-[70px]">
-                            <p className="color_primary text-2xl font-semibold py-[20px]">About Us</p>
-                            <p className="textColorDark text-xl font-medium py-[5px]">About</p>
-                            <p className="textColorDark text-xl font-medium py-[5px]">Blog</p>
-                            <p className="textColorDark text-xl font-medium py-[5px]">Story</p>
-                        </div>
-                        <div className="flex flex-col justify-start items-start px-[70px]">
-                            <p className="color_primary text-2xl font-semibold py-[20px]">Support</p>
-                            <p className="textColorDark text-xl font-medium py-[5px]">FAQ</p>
-                            <p className="textColorDark text-xl font-medium py-[5px]">Contact Us</p>
-                        </div>                
-                        <div className="flex flex-col justify-start items-start px-[70px]">
-                            <p className="color_primary text-2xl font-semibold py-[20px]">Ghid</p>
-                            <p className="textColorDark text-xl font-medium py-[5px]">Ghid utilizare</p>
-                            <p className="textColorDark text-xl font-medium py-[5px]">Ghid suport</p>   
-                        </div>                
-                </div>
-            </div>
-        </div>    
-    )
-}
+const Footer = () => (
+  <div className='shadow-md border text-sm text-opacity-40 text-black rounded-b-none border-b-0 p-5 flex flex-row justify-between bg-white rounded-xl w-[500px]'>
+    <span>Github</span>
+    <span>About</span>
+    <span>Copyright 2023 &copy; RoboZone</span>
+  </div>
+);
+
+export default Footer;
