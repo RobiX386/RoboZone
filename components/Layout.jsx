@@ -3,8 +3,10 @@ import { Container } from 'reactstrap';
 import Head from 'next/head';
 import Loading from './Loading';
 import NavBar from './NavBar';
+import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0/client';
+import Footer from './Footer';
 
-export default function Layout({ children }) {
+function Layout({ children }) {
   const [loading, setloading] = useState(true)
   useEffect(() => {
     setTimeout(() => {
@@ -20,8 +22,13 @@ export default function Layout({ children }) {
       <main id="app" className='flex flex-col bgpattern w-screen h-screen justify-between text-black content-center items-center'>
         <NavBar />
         <Container>{children}</Container>
+        <Footer />
       </main> </>: <Loading />}
     </>
   )
 
 }
+
+export default withPageAuthRequired(Layout, {
+  onRedirecting: () => '',
+});
