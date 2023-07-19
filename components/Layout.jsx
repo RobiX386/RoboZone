@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Container } from 'reactstrap';
 import Head from 'next/head';
 import Loading from '../components/Loading';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 export default function Layout({ children }) {
   const [loading, setloading] = useState(true)

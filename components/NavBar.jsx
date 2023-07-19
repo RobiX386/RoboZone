@@ -14,8 +14,8 @@ import {
 } from 'reactstrap';
 import { useUser } from '@auth0/nextjs-auth0/client';
 import Image from 'next/image';
-import PageLink from './PageLink';
-import AnchorLink from './AnchorLink';
+import PageLink from '../components/PageLink';
+import AnchorLink from '../components/AnchorLink';
 import Link from 'next/link';
 import LogoPNG from '../public/logoCol.png';
 import { useRouter } from 'next/router';
