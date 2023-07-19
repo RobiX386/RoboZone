@@ -20,6 +20,7 @@ export default function Layout({ children }) {
       <main id="app" className='flex flex-col bgpattern w-screen h-screen justify-between text-black content-center items-center'>
         <NavBar />
         <Container>{children}</Container>
+        <div></div>
       </main> </>: <Loading />}
     </>
   )
