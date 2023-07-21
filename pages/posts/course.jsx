@@ -53,7 +53,7 @@ export default function CourseView() {
                     <span className='text-gray-500 text-xl max-w-3xl '>Escape the matrix</span>
                 </div>
                 <div className=''>
-                    <Image src={'https://res.cloudinary.com/dvntmruhr/image/upload/v1689724244/UI%20Icons/Robot_xtk2uw.png'} width={300} height={300} />
+                    <Image src={'https://res.cloudinary.com/dvntmruhr/image/upload/v1689724244/UI%20Icons/Robot_xtk2uw.png'} alt='' width={300} height={300} />
                 </div>
             </div>
             <div className='flex flex-col space-y-5 pb-32 bg-white rounded-xl w-full'>

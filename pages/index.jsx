@@ -5,24 +5,7 @@ import Content from '../components/Content';
 import supabase from '../utils/supabase';
 import { useRouter } from 'next/router';
 import { motion } from "framer-motion";
-
-function Postcard({ title, description, id }) {
-  const maxLength = 140;
-  const router = useRouter();
-  const truncatedDesc = description?.substring(0, maxLength) + '...';
-
-  return (
-    <div onClick={() => router.push('/post/' + id)} className='flex flex-col hover:-translate-y-[10px] cursor-pointer hover:shadow-md space-y-3 transition duration-300 ease-in-out bg-white border justify-between rounded-xl p-5 shadow'>
-      <span className='underline decoration-4 decoration-blue-600 font-bold text-lg'>{title}</span>
-      <span className='text-black text-opacity-40 font-normal text-md'>{truncatedDesc}</span>
-      <span className='flex flex-row justify-between text-xs text-black text-opacity-40'>
-        <span>551 views</span>
-        <span>5 likes</span>
-      </span>
-
-    </div>
-  )
-}
+import Postcard from '../components/Postcard';
 
 export default function Index() {
   const [articles, setarticles] = useState([])
