@@ -177,7 +177,7 @@ export default function Editor({ read, json, note, user, actual_user, owner, use
       const x = await supabase.from('MD').insert([
         {
           title,
-          subtitle: outputData.blocks.find((block) => block.type === "paragraph").data.text,
+          subtitle: outputData.blocks.find((block) => block.type === "paragraph")?.data.text,
           json: outputData.blocks,
           content: 'asd',
           creator: user,
